@@ -22,7 +22,7 @@ This is a C implementation of a trie data structure which can operate multiple t
 - **Generate graph on write-intensive workload** `make write_intensive`
 - **Generate graph on read-write 50-50 workload** `make read_write`
 
-## PLots and Analysis
+## Plots and Analysis
 
 ---
 
