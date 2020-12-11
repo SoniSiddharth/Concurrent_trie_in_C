@@ -74,5 +74,3 @@ This is a C implementation of a trie data structure which can operate multiple t
 - Hand over hand locking again takes least time to complete the task.
 - Maximum peak taken by the Readers-writer lock is crossing 11 seconds with number of threads being 80 (approx).
 - It is greater than the Read Intensive workload timimg because this time writer threads were more which implies more starving and hence taking more time.
-
-- the plots are shown in [plots.md](https://github.com/CS301-2020/assignment-2-SoniSiddharth/blob/master/Q1/plots.md) with analysis based on the results.
