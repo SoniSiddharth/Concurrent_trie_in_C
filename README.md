@@ -1,6 +1,6 @@
 # Concurrent Trie
 
-This is a C implementation of a trie data structure which can operate multiple threads concurrently. Three types of locks have been implemented namely Single lock, Reader-Writer (RW) lock and Hand over hand (HOH) lock. The concurrency and memory usage has been verified by [Valgrind](https://valgrind.org/). Further, different locks have been compared using plots on different types of workload (Read-Write 50-50, Read intensive, Write workload).
+This is a C implementation of a trie data structure which can operate multiple threads concurrently. Three types of locks have been implemented namely Single mutex lock, Reader-Writer (RW) lock and Hand over hand (HOH) lock. The concurrency and memory usage has been verified by [Valgrind](https://valgrind.org/). Further, different locks have been compared using plots on different types of workload (read-write 50-50, read intensive, write intensive).
 
 ## Usage
 
