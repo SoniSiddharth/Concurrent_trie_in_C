@@ -1,0 +1,11 @@
+==6142== Helgrind, a thread error detector
+==6142== Copyright (C) 2007-2017, and GNU GPL'd, by OpenWorks LLP et al.
+==6142== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6142== Command: ./test_trie_hoh_lock
+==6142== Parent PID: 6141
+==6142== 
+==6142== 
+==6142== Use --history-level=approx or =none to gain increased speed, at
+==6142== the cost of reduced accuracy of conflicting-access information
+==6142== For lists of detected and suppressed errors, rerun with: -s
+==6142== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1561 from 108)

@@ -1,30 +1,4 @@
-# Concurrent Trie
-
-This is a C implementation of a trie data structure which can operate multiple threads concurrently. Three types of locks have been implemented namely Single lock, Reader-Writer (RW) lock and Hand over hand (HOH) lock. The concurrency and memory usage has been verified by [Valgrind](https://valgrind.org/). Further, different locks have been compared using plots on different types of workload (Read-Write 50-50, Read intensive, Write workload).
-
-## Usage
-
-## Compiling the test code:
-- **Single Threaded:** `make test_trie_single_threaded`
-- **Multi Threaded (Single Locking):** `make test_trie_s_lock` 
-- **Multi Threaded (R/W Lock):** `make test_trie_rw_lock`
-- **Multi Threaded (Hand on Hand Lock):** `make test_trie_hoh_lock`
-
-## Compiling and running the tests:
-- **Single Threaded:** `make single_threaded`
-- **Multi Threaded (Single Locking):** `make s_lock`
-- **Multi Threaded (R/W Lock):** `make rw_lock`
-- **Multi Threaded (Hand on Hand Lock):** `make hoh_lock`
-
-## For Comparison and generating plots:
-- **Generate workload** `make generate_workload`
-- **Generate graph on read-intensive workload** `make read_intensive`
-- **Generate graph on write-intensive workload** `make write_intensive`
-- **Generate graph on read-write 50-50 workload** `make read_write`
-
-## PLots and Analysis
-
----
+# Plots and Anaysis
 
 ## Read-write 50-50 workload
 
@@ -74,5 +48,3 @@ This is a C implementation of a trie data structure which can operate multiple t
 - Hand over hand locking again takes least time to complete the task.
 - Maximum peak taken by the Readers-writer lock is crossing 11 seconds with number of threads being 80 (approx).
 - It is greater than the Read Intensive workload timimg because this time writer threads were more which implies more starving and hence taking more time.
-
-- the plots are shown in [plots.md](https://github.com/CS301-2020/assignment-2-SoniSiddharth/blob/master/Q1/plots.md) with analysis based on the results.
